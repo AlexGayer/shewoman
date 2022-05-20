@@ -25,8 +25,8 @@ class _LoginState extends State<Login> {
                   padding: EdgeInsets.only(bottom: 32),
                   child: Image.asset(
                     "images/logo.png",
-                    width: 400,
-                    height: 400,
+                    width: 300,
+                    height: 300,
                   ),
                 ),
                 Padding(
@@ -41,6 +41,9 @@ class _LoginState extends State<Login> {
                       filled: true,
                       fillColor: Colors.white,
                       border: OutlineInputBorder(
+                        borderSide: BorderSide(
+                          color: Color(0xffc25670),
+                        ),
                         borderRadius: BorderRadius.circular(32),
                       ),
                     ),
@@ -57,6 +60,9 @@ class _LoginState extends State<Login> {
                       filled: true,
                       fillColor: Colors.white,
                       border: OutlineInputBorder(
+                        borderSide: BorderSide(
+                          color: Color(0xffc25670),
+                        ),
                         borderRadius: BorderRadius.circular(32),
                       ),
                     ),
@@ -84,6 +90,54 @@ class _LoginState extends State<Login> {
                       style: TextStyle(color: Colors.white, fontSize: 15),
                     ),
                     onTap: _criarCadastro,
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(top: 20),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      TextButton(
+                        onPressed: () {
+                          print("facebook");
+                        },
+                        child: Image.asset(
+                          "images/facebook.png",
+                          width: 40,
+                          height: 40,
+                        ),
+                      ),
+                      TextButton(
+                        onPressed: () {
+                          print("Google");
+                        },
+                        child: Image.asset(
+                          "images/google.png",
+                          width: 40,
+                          height: 40,
+                        ),
+                      ),
+                      TextButton(
+                        onPressed: () {
+                          print("Twitter");
+                        },
+                        child: Image.asset(
+                          "images/twitter.png",
+                          width: 40,
+                          height: 40,
+                        ),
+                      ),
+                      TextButton(
+                        onPressed: () {
+                          print("Google");
+                        },
+                        child: Image.asset(
+                          "images/instagram.png",
+                          width: 40,
+                          height: 40,
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ],

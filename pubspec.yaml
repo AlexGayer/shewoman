@@ -38,6 +38,9 @@ dependencies:
   firebase_auth: ^3.3.18
   firebase_storage: ^10.2.16
   cloud_firestore: ^3.1.15
+  font_awesome: ^5.10.1
+  fluttertoast: ^8.0.9
+  font_awesome_flutter: ^10.1.0
 
 dev_dependencies:
   flutter_test:
@@ -68,6 +71,10 @@ flutter:
   assets:
      - images/logo.png
      - images/user_she.png
+     - images/facebook.png
+     - images/twitter.png
+     - images/google.png
+     - images/instagram.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

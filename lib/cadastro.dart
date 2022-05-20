@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class Cadastro extends StatefulWidget {
   @override
@@ -73,8 +74,8 @@ class _CadastroState extends State<Cadastro> {
                   padding: EdgeInsets.only(bottom: 32),
                   child: Image.asset(
                     "images/user_she.png",
-                    width: 300,
-                    height: 300,
+                    width: 250,
+                    height: 250,
                   ),
                 ),
                 //campo nome
@@ -153,6 +154,7 @@ class _CadastroState extends State<Cadastro> {
                     ),
                   ),
                 ),
+
                 Center(
                   child: Text(
                     _mensagemErro,
